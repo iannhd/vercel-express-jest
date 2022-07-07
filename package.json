@@ -14,14 +14,6 @@
     "jest": "^28.1.2",
     "morgan": "~1.9.1",
     "supertest": "^6.2.4"
-  },
+  }
   
-    "version": 0.1,
-    "name": "express testing server",
-    "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
-    ]
 }
