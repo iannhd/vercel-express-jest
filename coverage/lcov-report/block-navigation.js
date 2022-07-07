@@ -17,7 +17,7 @@ var jumpToCode = (function init() {
         missingCoverageClasses.join(', ' + notSelector); // becomes `:not(a):not(b) > a, :not(a):not(b) > b`
 
     // The NodeList of matching elements
-    var missingCoverageElements = document.querySelectorAll(selector);
+    // var missingCoverageElements = document.querySelectorAll(selector);
 
     var currentIndex;
 
@@ -25,17 +25,17 @@ var jumpToCode = (function init() {
         missingCoverageElements
             .item(currentIndex)
             .classList.remove('highlighted');
-        missingCoverageElements.item(index).classList.add('highlighted');
+        // missingCoverageElements.item(index).classList.add('highlighted');
     }
 
     function makeCurrent(index) {
         toggleClass(index);
         currentIndex = index;
-        missingCoverageElements.item(index).scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-            inline: 'center'
-        });
+        // missingCoverageElements.item(index).scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'center',
+        //     inline: 'center'
+        // });
     }
 
     function goToPrevious() {
