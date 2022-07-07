@@ -4,6 +4,7 @@ const {signInWithEmailAndPassword} = require('firebase/auth')
 const { createUserWithEmailAndPassword } = require("firebase/auth")
 class TestingController {
     static testingGet(req,res) {
+        res.send('Hello Wulink')
         res.status(200)
     }
     static async testingLoginFirebaseAuth(req, res){
