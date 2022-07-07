@@ -4,13 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "jest --forceExit",
-    "builds": [
-      { "src": "app.js", "use": "@vercel/node" }
-   ],
-   "routes": [
-      { "src": "/(.*)", "dest": "/app.js" }
-   ]
+    "test": "jest --forceExit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -20,5 +14,14 @@
     "jest": "^28.1.2",
     "morgan": "~1.9.1",
     "supertest": "^6.2.4"
-  }
+  },
+  
+    "version": 0.1,
+    "name": "express testing server",
+    "builds": [
+       { "src": "app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/app.js" }
+    ]
 }
